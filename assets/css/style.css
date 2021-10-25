@@ -4,3 +4,67 @@
     --color3: rgb(231, 231, 231);
     --color4: rgb(78, 78, 78);
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: var(--color4);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+h1 {
+    background-color: var(--color1);
+    padding: 20px;
+    flex-grow: 1;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-grow: 2;
+    gap: 15px;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+nav a:hover {
+    color: var(--color4);
+    background-color: var(--color1);
+}
+
+a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--color3);
+}
+
+.project img {
+    width: 300px;
+}
+
+@media screen and (max-width:980px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+    nav a {
+        line-height: 46px;
+        justify-content: center;
+    }
+}
