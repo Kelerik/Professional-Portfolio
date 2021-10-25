@@ -2,7 +2,7 @@
     --color1: rgb(228, 129, 0);
     --color2: rgb(0, 226, 207);
     --color3: rgb(231, 231, 231);
-    --color4: rgb(78, 78, 78);
+    --color4: rgb(46, 46, 46);
 }
 
 * {
@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color3);
 }
 
 header {
@@ -25,6 +26,7 @@ h1 {
     background-color: var(--color1);
     padding: 20px;
     flex-grow: 1;
+    color: var(--color4);
 }
 
 nav {
@@ -51,7 +53,30 @@ nav a:hover {
 a {
     font-weight: bolder;
     text-decoration: none;
-    color: var(--color3);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#about {
+    background-color: var(--color4);
+}
+
+.about-img {
+    flex: 0 1 250px;
+    margin: 50px;
+}
+
+.about-img img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.about-text {
+    flex: 1;
 }
 
 .project img {
