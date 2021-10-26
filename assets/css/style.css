@@ -11,6 +11,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--colorlight);
 }
+/* --- HEADER --- contains name and navigation */
 header {
     text-align: center;
     display: flex;
@@ -27,6 +28,7 @@ header h1 {
     flex-grow: 1;
     color: var(--colordark);
 }
+/* navigation, contains links to sections */
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -35,20 +37,24 @@ nav {
     flex-grow: 2;
     gap: 15px;
 }
+/* navigation links appear as large "buttons" */
 nav a {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
+/* light up on mouseover */
 nav a:hover {
     color: var(--colormid);
     background-color: var(--coloraccent);
 }
+/* style the links */
 a {
     font-weight: bolder;
     text-decoration: none;
 }
+/* --- SECTION --- */
 section {
     padding: 0 15%;
     display: flex;
@@ -57,26 +63,18 @@ section {
     justify-content: space-around;
     gap: 25px;
 }
+/* alternate background colours */
 section:nth-child(even) {
     background-color: var(--colormid);
 }
 section:nth-child(odd) {
     background-color: var(--colordark);
 }
+/* adds padding to bottom of every section except the first one (about section) */
 section:not(:first-child) {
     padding-bottom: 30px;
 }
-.about-img {
-    flex: 0 1 250px;
-    margin: 50px;
-}
-.about-img img {
-    border-radius: 50%;
-    max-width: 100%;
-}
-.about-text {
-    flex: 1;
-}
+/* section headers */
 h2 {
     background-color: var(--coloraccent);
     color: var(--colordark);
@@ -90,27 +88,46 @@ h3 {
     font-size: 26px;
     padding-bottom: 8px;
 }
+/* --- ABOUT --- */
+.about-img {
+    flex: 0 1 250px;
+    margin: 50px;
+}
+.about-img img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+.about-text {
+    flex: 1;
+}
+/* --- PROJECT --- */
 .project {
     flex: 1 0 300px;
     border: 8px solid var(--coloraccent);
     background-color: var(--colorlight);
 }
+/* emphasize the first project. this assumes the first child is just the <h2> and the second child will be the first project */
 .project:nth-child(2) {
     flex: 100%;
 }
+/* must set display:block to remove the whitespace under the image */
 .project img {
     width: 100%;
     display: block;
 }
+/* simulate lighting up on mouseover. it turns white because of the white background from the .project styling above  */
 .project img:hover {
     opacity: 70%;
 }
+/* --- CONTACT --- */
+/* contact section has another container inside it. flex is used to generate two columns */
 .contact-flex {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     position: relative;
 }
+/* form and map get equal sized columns */
 .contact-flex form {
     flex: 1;
 }
@@ -118,11 +135,13 @@ h3 {
     flex: 1;
     height: 400px;
 }
+/* absolute postioning to "float" under the form. @media smaller screen size with remove the position:absolute */
 .contact-flex address {
     position: absolute;
     bottom: 20px;
     left: 0;
 }
+/* elements inside the form container */
 input,
 textarea,
 button {
@@ -138,6 +157,8 @@ button {
     font-size: 20px;
     font-weight: bold;
 }
+/* --- FOOTER --- */
+/* unlike the header, the text is "aligned" to the right. @media smaller screen size will center it */
 footer {
     background-color: var(--colordark);
     display: flex;
@@ -147,35 +168,50 @@ footer {
 footer h1 {
     font-size: 46px;
 }
+/* highlight the name, just like the header, but using different method and HTML */
 .signature {
     color: var(--colordark);
     background-color: var(--coloraccent);
     padding: 0 20px;
 }
+/* ------ MEDIA QUERIES ------ */
 @media screen and (max-width: 1000px) {
+    /* center the nav links */
     nav a {
         line-height: 46px;
         justify-content: center;
     }
+    /* reduce side padding */
     section {
         padding: 0 7%;
     }
+    /* center the elements */
     footer {
         align-items: center;
         text-align: center;
         line-height: 1.5;
     }
+    /* remove flex, fill entire width */
     .signature {
         display: block;
     }
 }
 @media screen and (max-width: 700px) {
+    header h1,
+    footer h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    /* reduce padding */
     .about-img {
         margin: 20px 0 0;
     }
     .about-text {
         padding: 0 0 30px 0;
     }
+    /* remove flex, fill entire width */
     .contact-flex {
         display: block;
     }
@@ -183,16 +219,18 @@ footer h1 {
         width: 100%;
         padding: 16px 0;
     }
+    /* remove absolute positioning */
     .contact-flex address {
         position: static;
         text-align: center;
     }
 }
 @media screen and (max-width: 350px) {
+    /* remove side padding (top and bottom padding should already be 0 */
     section {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
     }
+    /* make all projects same width. no more emphasis on the first one */
     .project {
         flex: 1 1 100%;
     }
