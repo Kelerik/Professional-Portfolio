@@ -1,8 +1,9 @@
 :root {
     --color1: rgb(228, 129, 0);
-    --color2: rgb(0, 226, 207);
-    --color3: rgb(231, 231, 231);
-    --color4: rgb(46, 46, 46);
+    --color2: rgb(0, 162, 226);
+    --color3: rgb(236, 236, 236);
+    --color4: rgb(70, 70, 70);
+    --color5: rgb(32, 32, 32);
 }
 
 * {
@@ -14,19 +15,21 @@
 }
 
 header {
-    background-color: var(--color4);
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     align-items: stretch;
+    background-color: var(--color4);
 }
 
 h1 {
     background-color: var(--color1);
-    padding: 20px;
+    font-size: 60px;
+    padding: 10px;
     flex-grow: 1;
-    color: var(--color4);
+    color: var(--color5);
 }
 
 nav {
@@ -56,13 +59,24 @@ a {
 }
 
 section {
+    padding: 0 15%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
+    gap: 25px;
 }
 
-#about {
+section:nth-child(even) {
     background-color: var(--color4);
+}
+
+section:nth-child(odd) {
+    background-color: var(--color5);
+}
+
+section:not(:first-child) {
+    padding-bottom: 30px;
 }
 
 .about-img {
@@ -79,15 +93,39 @@ section {
     flex: 1;
 }
 
-.project img {
-    width: 300px;
+h2 {
+    background-color: var(--color1);
+    color: var(--color5);
+    width: 100%;
+    font-size: 40px;
+    padding: 10px;
 }
 
-@media screen and (max-width:980px) {
-    header {
-        justify-content: center;
-        text-align: center;
-    }
+h3 {
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+.project {
+    flex: 1 0 300px;
+    border: 8px solid var(--color1);
+    background-color: var(--color3);
+}
+
+.project:nth-child(2) {
+    flex: 100%;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.project img:hover {
+    opacity: 70%;
+}
+
+@media screen and (max-width: 980px) {
     nav a {
         line-height: 46px;
         justify-content: center;
