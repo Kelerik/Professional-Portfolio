@@ -3,6 +3,7 @@
     --colorlight: rgb(236, 236, 236);
     --colormid: rgb(70, 70, 70);
     --colordark: rgb(32, 32, 32);
+    --sectiongap: 30px;
 }
 * {
     box-sizing: border-box;
@@ -61,7 +62,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    gap: 25px;
+    gap: var(--sectiongap);
 }
 /* alternate background colours */
 section:nth-child(even) {
@@ -72,7 +73,7 @@ section:nth-child(odd) {
 }
 /* adds padding to bottom of every section except the first one (about section) */
 section:not(:first-child) {
-    padding-bottom: 30px;
+    padding-bottom: var(--sectiongap);
 }
 /* section headers */
 h2 {
@@ -209,7 +210,7 @@ footer h1 {
         margin: 20px 0 0;
     }
     .about-text {
-        padding: 0 0 30px 0;
+        padding: 0 0 var(--sectiongap) 0;
     }
     /* remove flex, fill entire width */
     .contact-flex {
