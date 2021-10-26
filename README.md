@@ -7,4 +7,4 @@ Visit it at https://kelerik.github.io/Professional-Portfolio/
 Made by Vincent Nguyen
 
 Screenshot preview:
-![Webpage Screenshot](./assets/img/Screenshot.png)
+![Webpage Screenshot](./assets/img/screenshot.png)
