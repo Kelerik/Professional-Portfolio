@@ -1,160 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Vincent Nguyen's Professional Portfolio</title>
-    </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      <title>Vincent Nguyen's Professional Portfolio</title>
+   </head>
 
-    <body>
-        <!-- HEADER AND NAV -->
-        <header>
+   <body>
+      <!-- HEADER AND NAV -->
+      <header>
+         <!-- elements stack vertically at smaller screens -->
+         <!-- left -->
+         <h1>VINCENT NGUYEN</h1>
+         <!-- right -->
+         <nav>
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#resume">RESUME</a>
+         </nav>
+      </header>
+
+      <main>
+         <!-- ABOUT ME -->
+         <section id="about">
             <!-- elements stack vertically at smaller screens -->
             <!-- left -->
-            <h1>VINCENT NGUYEN</h1>
+            <div class="about-img">
+               <img src="./assets/img/portrait.jpg" alt="" />
+            </div>
             <!-- right -->
-            <nav>
-                <a href="#about">ABOUT</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#contact">CONTACT</a>
-                <a href="#resume">RESUME</a>
-            </nav>
-        </header>
+            <div class="about-text">
+               <h2>About Me</h2>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  debitis ipsam dolor sunt rerum incidunt quia natus quibusdam
+                  similique quidem, velit eum illum iure voluptates odio, maxime
+                  quo nam placeat!
+               </p>
+            </div>
+         </section>
 
-        <main>
-            <!-- ABOUT ME -->
-            <section id="about">
-                <!-- elements stack vertically at smaller screens -->
-                <!-- left -->
-                <div class="about-img">
-                    <img src="./assets/img/portrait.jpg" alt="" />
-                </div>
-                <!-- right -->
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quam debitis ipsam dolor sunt rerum incidunt quia natus
-                        quibusdam similique quidem, velit eum illum iure
-                        voluptates odio, maxime quo nam placeat!
-                    </p>
-                </div>
-            </section>
+         <!-- PROJECTS -->
+         <section id="projects">
+            <!-- full width -->
+            <h2>Projects</h2>
+            <!-- elements stack vertically at smaller screens -->
+            <!-- first, primary project -->
+            <a
+               class="project"
+               href="https://github.com/chamibia/lyrics-finder/"
+            >
+               <h3>Lyrics Finder</h3>
+               <img
+                  src="./assets/img/artistlyrics.jpg"
+                  alt="Webpage of a song and lyric search engine."
+               />
+            </a>
+            <!-- remaining projects, flexing -->
+            <a class="project" href="https://kelerik.github.io/run-buddy/">
+               <h3>Run Buddy</h3>
+               <img
+                  src="./assets/img/runbuddy.jpg"
+                  alt="A runner tying their shoes and getting ready to go for a jog."
+               />
+            </a>
+            <a class="project" href="./placeholder.html">
+               <h3>Plant Museum</h3>
+               <img
+                  src="./assets/img/museum.jpg"
+                  alt="The main lobby of a multi-floor museum featuring many lights, overpasses, and massive planters on the walls."
+               />
+            </a>
+            <a class="project" href="./placeholder.html">
+               <h3>Festival Decoration</h3>
+               <img
+                  src="./assets/img/festival.jpg"
+                  alt="A cemetary at dusk with many tall trees and bright candles at the gravestones."
+               />
+            </a>
+            <a class="project" href="./placeholder.html">
+               <h3>Subway Design</h3>
+               <img
+                  src="./assets/img/subway.jpg"
+                  alt="The main deck inside a large subway station, with the viewer facing two escalators heading upwards."
+               />
+            </a>
+            <a class="project" href="./placeholder.html">
+               <h3>Tourism Planning</h3>
+               <img
+                  src="./assets/img/tourism.jpg"
+                  alt="A lakeside town at dawn with great mountains in the background."
+               />
+            </a>
+         </section>
 
-            <!-- PROJECTS -->
-            <section id="projects">
-                <!-- full width -->
-                <h2>Projects</h2>
-                <!-- elements stack vertically at smaller screens -->
-                <!-- first, primary project -->
-                <a class="project" href="https://kelerik.github.io/run-buddy/">
-                    <h3>Run Buddy</h3>
-                    <img
-                        src="./assets/img/runbuddy.jpg"
-                        alt="A runner tying their shoes and getting ready to go for a jog."
-                    />
-                </a>
-                <!-- remaining projects, flexing -->
-                <a class="project" href="./placeholder.html">
-                    <h3>Plant Museum</h3>
-                    <img
-                        src="./assets/img/museum.jpg"
-                        alt="The main lobby of a multi-floor museum featuring many lights, overpasses, and massive planters on the walls."
-                    />
-                </a>
-                <a class="project" href="./placeholder.html">
-                    <h3>Festival Decoration</h3>
-                    <img
-                        src="./assets/img/festival.jpg"
-                        alt="A cemetary at dusk with many tall trees and bright candles at the gravestones."
-                    />
-                </a>
-                <a class="project" href="./placeholder.html">
-                    <h3>Subway Design</h3>
-                    <img
-                        src="./assets/img/subway.jpg"
-                        alt="The main deck inside a large subway station, with the viewer facing two escalators heading upwards."
-                    />
-                </a>
-                <a class="project" href="./placeholder.html">
-                    <h3>Tourism Planning</h3>
-                    <img
-                        src="./assets/img/tourism.jpg"
-                        alt="A lakeside town at dawn with great mountains in the background."
-                    />
-                </a>
-            </section>
+         <!-- CONTACT -->
+         <section id="contact">
+            <!-- full width -->
+            <h2>Contact</h2>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+               debitis ipsam dolor sunt rerum incidunt quia natus quibusdam
+               similique quidem, velit eum illum iure voluptates odio, maxime
+               quo nam placeat!
+            </p>
+            <!-- another contaier created to create two columns max -->
+            <div class="contact-flex">
+               <!-- elements stack vertically at smaller screens -->
+               <!-- left -->
+               <form>
+                  <label for="contact-name">Your Name</label>
+                  <input
+                     type="text"
+                     id="contact-name"
+                     placeholder="Your name here"
+                  />
+                  <label for="contact-message">Message</label>
+                  <textarea
+                     id="contact-message"
+                     placeholder="Your message here"
+                  ></textarea>
+                  <button type="button">Send message</button>
+               </form>
+               <!-- right -->
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.293120418672!2d-75.79175788416752!3d45.34289494955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce00cb615f65f7%3A0xb5c3753c8ff8ed30!2s1711-2600%20Draper%20Ave%2C%20Ottawa%2C%20ON%20K2H%209A9%2C%20Canada!5e0!3m2!1sen!2sus!4v1635216148235!5m2!1sen!2sus"
+                  style="border: 0"
+                  allowfullscreen=""
+               ></iframe>
+               <!-- "floats" in bottom of left column. later joins the stack at smaller screens -->
+               <address>
+                  1711-2600 Draper Ave <br />
+                  Ottawa, Ontario, Canada <br />
+                  K2H 9A9 <br />
+                  613-979-6817 <br />
+                  <a href="mailto:vincent.ng39@gmail.com"
+                     >vincent.ng39@gmail.com</a
+                  >
+               </address>
+            </div>
+         </section>
 
-            <!-- CONTACT -->
-            <section id="contact">
-                <!-- full width -->
-                <h2>Contact</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam debitis ipsam dolor sunt rerum incidunt quia natus
-                    quibusdam similique quidem, velit eum illum iure voluptates
-                    odio, maxime quo nam placeat!
-                </p>
-                <!-- another contaier created to create two columns max -->
-                <div class="contact-flex">
-                    <!-- elements stack vertically at smaller screens -->
-                    <!-- left -->
-                    <form>
-                        <label for="contact-name">Your Name</label>
-                        <input
-                            type="text"
-                            id="contact-name"
-                            placeholder="Your name here"
-                        />
-                        <label for="contact-message">Message</label>
-                        <textarea
-                            id="contact-message"
-                            placeholder="Your message here"
-                        ></textarea>
-                        <button type="button">Send message</button>
-                    </form>
-                    <!-- right -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.293120418672!2d-75.79175788416752!3d45.34289494955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce00cb615f65f7%3A0xb5c3753c8ff8ed30!2s1711-2600%20Draper%20Ave%2C%20Ottawa%2C%20ON%20K2H%209A9%2C%20Canada!5e0!3m2!1sen!2sus!4v1635216148235!5m2!1sen!2sus"
-                        style="border: 0"
-                        allowfullscreen=""
-                    ></iframe>
-                    <!-- "floats" in bottom of left column. later joins the stack at smaller screens -->
-                    <address>
-                        1711-2600 Draper Ave <br />
-                        Ottawa, Ontario, Canada <br />
-                        K2H 9A9 <br />
-                        613-979-6817 <br />
-                        <a href="mailto:vincent.ng39@gmail.com"
-                            >vincent.ng39@gmail.com</a
-                        >
-                    </address>
-                </div>
-            </section>
+         <!-- RESUME -->
+         <section id="resume">
+            <!-- full width -->
+            <h2>Resume</h2>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+               debitis ipsam dolor sunt rerum incidunt quia natus quibusdam
+               similique quidem, velit eum illum iure voluptates odio, maxime
+               quo nam placeat!
+            </p>
+         </section>
+      </main>
 
-            <!-- RESUME -->
-            <section id="resume">
-                <!-- full width -->
-                <h2>Resume</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam debitis ipsam dolor sunt rerum incidunt quia natus
-                    quibusdam similique quidem, velit eum illum iure voluptates
-                    odio, maxime quo nam placeat!
-                </p>
-            </section>
-        </main>
-
-        <!-- FOOTER -->
-        <footer>
-            <!-- name is "highlighted" inline. moves to next line at smaller screens -->
-            <h1>
-                Made with pride by <span class="signature">Vincent Nguyen</span>
-            </h1>
-            <!-- right. centered at smaller screens -->
-            <p>&copy; 2021</p>
-            <div><a href="#">Back to top</a></div>
-        </footer>
-    </body>
+      <!-- FOOTER -->
+      <footer>
+         <!-- name is "highlighted" inline. moves to next line at smaller screens -->
+         <h1>
+            Made with pride by <span class="signature">Vincent Nguyen</span>
+         </h1>
+         <!-- right. centered at smaller screens -->
+         <p>&copy; 2021</p>
+         <div><a href="#">Back to top</a></div>
+      </footer>
+   </body>
 </html>
